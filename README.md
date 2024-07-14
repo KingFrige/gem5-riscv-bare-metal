@@ -48,7 +48,7 @@ $ make
 $ ./m5term localhost 3456
 ```
 
-![](docs/gem5-riscv-bare-metal.png]
+![](docs/gem5-riscv-bare-metal.png)
 
 
 ## reference
