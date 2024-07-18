@@ -36,9 +36,9 @@ $ ls -l build/
 
 ```bash
 $ cd gem5
-$ scons -sQ -j$(nproc) build/RISCV/gem5.debug
+$ time scons -sQ -j$(nproc) build/RISCV/gem5.debug
 
-$ ./build/RISCV/gem5.debug ./configs/example/riscv/fs_linux.py --bare-metal --kernel=../gem5-riscv-bare-metal/build/hello-uart-gem5.elf
+$ ./build/RISCV/gem5.debug ./configs/example/riscv/fs_linux.py -n 4 --bare-metal --kernel=../gem5-riscv-bare-metal/build/hello-uart-gem5.elf
 
 # new ternimal/shell
 $ cd util/term
