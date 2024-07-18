@@ -1,3 +1,5 @@
+#include "ns16550a.h"
+
 int main() {
   char p = 'h';
   uartinit();
