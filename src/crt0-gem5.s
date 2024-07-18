@@ -5,6 +5,14 @@ _start:
     .cfi_undefined ra
     .option push
     .option norelax
+    csrr   t0, mhartid
+    lui    t1, 0
+    beq    t0, t1, 2f
+
+1:  wfi
+    j      1b
+
+2:
     la gp, _gp
     .option pop
     la sp, stack_top

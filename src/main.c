@@ -6,6 +6,7 @@ int main() {
   uartputc(p);
   p++;
   uartputc(p);
+  uartputc('\n');
 
   while(1){;}
 
