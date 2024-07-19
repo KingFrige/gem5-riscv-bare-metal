@@ -14,7 +14,7 @@ If you have any questions, comments, or corrections, feel free to [open an issue
 ```bahs
 ├── gem5
 │   └── build
-│       └── gem5.opt
+│       └── gem5.debug
 └── gem5-riscv-bare-metal
     └── build
         └── hello-uart-gem5.elf
